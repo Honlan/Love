@@ -1,102 +1,94 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-	<title>Our Love Story</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
+    <title>大宝和宝比的故事</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    @font-face {
+        font-family: digit;
+        src: url('digital-7_mono.ttf') format("truetype");
+    }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <!-- left -->
+    <link href='http://www.youziku.com/webfont/CSS/13e35a3d40125234a0882bf25fec5d8b' rel='stylesheet' type='text/css'/>
+	<!-- greet -->
+	<link href='http://www.youziku.com/webfont/CSS/d926326408b0c5c2400f7e1fc020fa8e' rel='stylesheet' type='text/css'/>
+	<!-- signature -->
+    <link href='http://www.youziku.com/webfont/CSS/7fc1250d2e98ca93d2e2aafc318e706e' rel='stylesheet' type='text/css'/>
+    <!-- wish -->
+    <link href='http://www.youziku.com/webfont/CSS/57fd0fb250ea0a527aa0901431f76ec9' rel='stylesheet' type='text/css'/>
 </head>
 
 <body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
-			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						Minyue, I have fallen in love with you for
-						<div id="elapseClock"></div>
-					</div>
-					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+               <p>亲爱的宝比，不知不觉又迎来了一年情人节，不知不觉我们在一起的时间又长了许多。</p>
+               <p>一路走来的岁月里，身边有你，像是一直陪伴着我的六月阳光，温和、舒适、温馨。</p>
+               <p>也许有时候会有小的争吵、小的矛盾，但是想想我们经历的回忆，酸甜苦辣，那么多那么多，那么多深入骨髓的记忆，让一切不好的事情都成了过往云烟。</p>
+               <p>感谢你，出现在我的世界里，来到我身边，留在了我身边，不离不弃、执手相守。</p>
+               <p>爱就是和你一起面对生活的点点滴滴，希望以后我的生活里有你，你的生活里也有我，在一起、不分开。</p>
+               <p>你是我最温暖的存在，你是我心里最柔软的地方，你是我想用一生的时间去守护去珍惜的家。</p>
+               <p>亲爱的比比，我爱你，永远爱你。</p>
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        <span class="greet">亲爱的宝比，我们已经在一起</span>
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        <span class="wish">好好在一起，一直走下去</span>
+                        <br>	
+                        <span class="signature">爱你的大宝</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            Inspired by Hacker Zhou's project.
+            <br /> Copyright By 2014-2015. Honlan All Rights Reserved. 
+        </div>
+    </div>
+    <script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    var together = new Date();
+    together.setFullYear(2013, 7, 7);
+    together.setHours(7);
+    together.setMinutes(7);
+    together.setSeconds(7);
+    together.setMilliseconds(0);
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function() {
+            startHeartAnimation();
+        }, 1000);
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
+        timeElapse(together);
+        setInterval(function() {
+            timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+    </script>
 </body>
+
 </html>
